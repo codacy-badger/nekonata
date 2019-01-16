@@ -1,4 +1,68 @@
-html {
-  color: #ffffff;
-  background-color: #000000;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  color: $text-color;
+  background-color: $dark-blue;
+  font-family: liberation-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar-container {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.navbar-container-2 {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+}
+
+.navbar-logo {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  fill: $scarlet;
+}
+
+.footer-logo {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  fill: $scarlet;
+}
+
+
+.search-container {
+  width: 720px;
+  height: 48px;
+}
+
+input {
+  color: $text-color;
+  border-radius: 2px;
+  background-color: $fitting-black;
+}
+
+input[type=search] {
+  font-size: larger;
+  padding: 5px 5px 0 15px;
+  width: 100%;
+  height: 100%;
+}
+
+input[type=search]:focus-within {
+  border: 1px solid $scarlet;
+  border-width: 3px;
 }
