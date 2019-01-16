@@ -26,11 +26,13 @@ gem 'devise', '~> 4.5.0'
 # 2FA devise
 gem 'devise-two-factor', '~> 3.0.3'
 
+gem 'acts_as_votable', '~> 0.12.0'
 gem 'administrate', '~> 0.11.0'
 gem 'inline_svg', '~> 1.3.1'
 gem 'gravatar_image_tag'
 gem 'searchkick', '~> 3.1.2'
 gem 'simple_form'
+gem 'kaminari', '~> 1.1.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
