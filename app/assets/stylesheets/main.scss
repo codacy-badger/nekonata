@@ -8,50 +8,95 @@
   background: transparent;
 }
 
-body {
+html, body {
   color: $text-color;
   background-color: $dark-blue;
   font-family: liberation-sans, sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
-.navbar-container {
+body > .container {
+  padding: 50px 144px 75px 144px;
+}
+
+.navbar {
+  padding: 25px 144px 25px 144px;
+  height: 50px;
+  box-shadow: 0 3px 0 $scarlet;
+}
+
+.navbar > .container {
   display: flex;
+  justify-content: space-between;
   width: 100%;
-  margin-top: 10px;
-  justify-content: center;
-}
-
-.navbar-container-2 {
-  display: flex;
-  margin: 10px;
-  justify-content: center;
+  height: 100%;
 }
 
 .navbar-logo {
-  display: block;
-  margin: 0 auto;
   height: 48px;
   fill: $scarlet;
+}
+
+.footer {
+  padding: 25px 144px 0 144px;
+  height: 50px;
+}
+
+.footer > .footer-container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container ul {
+  display: flex;
+  list-style: none;
+}
+
+.footer-container ul li {
+  display: flex;
+  align-self: center;
+  list-style: none;
 }
 
 .footer-logo {
-  display: block;
-  margin: 0 auto;
   height: 48px;
   fill: $scarlet;
 }
 
-
 .search-container {
   width: 720px;
-  height: 48px;
+  height: 100%;
+}
+
+.user-nav-avatar {
+  height: 100%;
+  width: auto;
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: $camouflage-green;
+}
+
+a:hover {
+  color: $scarlet;
+}
+
+button {
+  color: $text-color;
+  background-color: $scarlet;
+  border-radius: 3px;
+  padding: 7px;
+}
+
+button:hover {
+  background-color: darken($scarlet, 15%);
 }
 
 input {
+  line-height: 2;
   color: $text-color;
-  border-radius: 2px;
+  border-radius: 3px;
   background-color: $fitting-black;
 }
 
@@ -64,5 +109,4 @@ input[type=search] {
 
 input[type=search]:focus-within {
   border: 1px solid $scarlet;
-  border-width: 3px;
 }
